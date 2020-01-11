@@ -23,6 +23,8 @@
 
 uint32_t readUint32(std::ifstream& f);
 
+//TODO: Move this to a seperate file.
+
 struct Number{
 public:
     uint8_t label;
@@ -81,10 +83,10 @@ void readLabel(const std::string& filePath) {
 
     assert(magicNum == 2049);
 
-    char c;
+    int c;
     for(int i = 0; i < sampleSize; i++) {
         c = f.get();
-        std::cout << static_cast<uint8_t>(c) << std::endl;
+        std::cout << static_cast<int>(c) << std::endl;
     }
 
     assert(f.good());
@@ -113,13 +115,13 @@ void greeting() {
 
 int main(int argc, const char * argv[]) {
 
-//    greeting();
-//
-//    try {
-//        readData("/Users/aarronrasmussen/SaDOS/train-images-idx3-ubyte");
-//    } catch (std::exception e) {
-//        std::cerr << e.what() << std::endl;
-//    }
+    greeting();
+
+    try {
+        readData("/Users/aarronrasmussen/SaDOS/train-images-idx3-ubyte");
+    } catch (std::exception e) {
+        std::cerr << e.what() << std::endl;
+    }
 
     try {
         readLabel("/Users/aarronrasmussen/SaDOS/train-labels-idx1-ubyte");
