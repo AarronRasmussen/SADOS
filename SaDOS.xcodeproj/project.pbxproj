@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D243B4CD23C973020063EDDE /* MNISTReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D243B4CB23C973020063EDDE /* MNISTReader.cpp */; };
 		D2DE975223C84CFE0063EDDE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DE975123C84CFE0063EDDE /* main.cpp */; };
 		D2DE975A23C84D110063EDDE /* Net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DE975823C84D110063EDDE /* Net.cpp */; };
 		D2DE975D23C84D1B0063EDDE /* Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2DE975B23C84D1B0063EDDE /* Neuron.cpp */; };
@@ -26,7 +25,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D243B4CB23C973020063EDDE /* MNISTReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MNISTReader.cpp; sourceTree = "<group>"; };
 		D243B4CC23C973020063EDDE /* MNISTReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MNISTReader.hpp; sourceTree = "<group>"; };
 		D2DE974E23C84CFE0063EDDE /* SaDOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SaDOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DE975123C84CFE0063EDDE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				D2DE975923C84D110063EDDE /* Net.hpp */,
 				D2DE975B23C84D1B0063EDDE /* Neuron.cpp */,
 				D2DE975C23C84D1B0063EDDE /* Neuron.hpp */,
-				D243B4CB23C973020063EDDE /* MNISTReader.cpp */,
 				D243B4CC23C973020063EDDE /* MNISTReader.hpp */,
 			);
 			path = SaDOS;
@@ -136,7 +133,6 @@
 			files = (
 				D2DE975223C84CFE0063EDDE /* main.cpp in Sources */,
 				D2DE975A23C84D110063EDDE /* Net.cpp in Sources */,
-				D243B4CD23C973020063EDDE /* MNISTReader.cpp in Sources */,
 				D2DE975D23C84D1B0063EDDE /* Neuron.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
