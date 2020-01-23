@@ -68,18 +68,4 @@ int main(int argc, const char * argv[]) {
     }
 
     delete [] labelArray;
-
-//    try {
-//        readData("/Users/aarronrasmussen/SaDOS/train-images-idx3-ubyte");
-//    } catch (std::exception e) {
-//        std::cerr << e.what() << std::endl;
-//    }
-//
-//    try {
-//        readLabel("/Users/aarronrasmussen/SaDOS/train-labels-idx1-ubyte");
-//    } catch (std::exception e) {
-//        std::cerr << e.what() << std::endl;
-//    }
 }
-
-

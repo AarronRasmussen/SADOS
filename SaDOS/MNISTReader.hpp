@@ -13,7 +13,7 @@
 #include <iostream>
 
 class MNISTReader {
-     static uint32_t readUint32(std::ifstream& f) {
+        static uint32_t readUint32(std::ifstream& f) {
         uint32_t magicNum;
 
         f.read(reinterpret_cast<char*>(&magicNum), sizeof(magicNum));

@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D23FC0CD23CEE4D50063EDDE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		D243B4CC23C973020063EDDE /* MNISTReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MNISTReader.hpp; sourceTree = "<group>"; };
 		D2DE974E23C84CFE0063EDDE /* SaDOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SaDOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DE975123C84CFE0063EDDE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				D2DE975123C84CFE0063EDDE /* main.cpp */,
+				D23FC0CD23CEE4D50063EDDE /* Test.h */,
 				D2DE975823C84D110063EDDE /* Net.cpp */,
 				D2DE975923C84D110063EDDE /* Net.hpp */,
 				D2DE975B23C84D1B0063EDDE /* Neuron.cpp */,
