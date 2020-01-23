@@ -5,6 +5,8 @@
 #include <cmath>
 #include <algorithm>
 #include <cassert>
+#include <random>
+#include <iterator>
 
 struct Neuron {
     double i0;
@@ -114,4 +116,17 @@ int main() {
 
     double updateW5 = updateWeight(weights[4], delta, learningRate);
     std::cout << "updated weight: " << updateW5 << std::endl;
+
+
+    std::random_device rd;
+    std::mt19937 n(rd());
+
+    std::uniform_real_distribution<double> dist(0,1);
+
+    std::vector<double> vec;
+    for(int i = 0; i < 10; i++) {
+        vec.push_back(dist(n));
+    }
+
+    std::copy(vec.begin(), vec.end(), std::ostream_iterator<double>(std::cout, "\n"));
 }

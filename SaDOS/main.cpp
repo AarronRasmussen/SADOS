@@ -21,6 +21,7 @@
 
 #include <arpa/inet.h>
 #include "MNISTReader.hpp"
+#include "Net.hpp"
 
 uint32_t readUint32(std::ifstream& f);
 
@@ -58,14 +59,16 @@ void greeting() {
 
 int main(int argc, const char * argv[]) {
     greeting();
-    std::vector<Number> numVec;
+//    std::vector<Number> numVec;
+//
+//    int* labelArray = MNISTReader::readLabel("/Users/aarronrasmussen/SaDOS/train-labels-idx1-ubyte");
+//    MNISTReader::readData("/Users/aarronrasmussen/SaDOS/train-images-idx3-ubyte");
+//
+//    for(size_t i = 0; i < 60000; i++) {
+//        std::cout << labelArray[i] << std::endl;
+//    }
+//
+//    delete [] labelArray;
 
-    int* labelArray = MNISTReader::readLabel("/Users/aarronrasmussen/SaDOS/train-labels-idx1-ubyte");
-    MNISTReader::readData("/Users/aarronrasmussen/SaDOS/train-images-idx3-ubyte");
-
-    for(size_t i = 0; i < 60000; i++) {
-        std::cout << labelArray[i] << std::endl;
-    }
-
-    delete [] labelArray;
+    Net netWork = Net(2, 2, 1, .5);
 }

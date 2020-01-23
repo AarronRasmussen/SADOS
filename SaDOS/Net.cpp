@@ -8,8 +8,20 @@
 
 #include "Net.hpp"
 
-Net::Net(const std::vector<unsigned> &layout) {
+Net::Net(const int& inputNum, const int& hiddenNum, const int& outputNum, const int& learningRate) {
+    this->learningRate = learningRate;
+    outputLayer.reserve(outputNum);
 
+
+    for(int i = 0; i < hiddenNum; i++) {
+        hiddenLayer.push_back(new Neuron(inputNum, hiddenNum));
+    }
+
+    for(int i = 0; i < outputNum; ++i) {
+        outputLayer.push_back(new Neuron(outputNum, outputNum));
+    }
+
+    std::cout << "Net constructor called" << std::endl;
 }
 
 void Net::feedForward(const std::vector<double> &input) {

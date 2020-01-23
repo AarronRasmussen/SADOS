@@ -11,18 +11,37 @@
 
 #include <stdio.h>
 #include <vector>
+#include <iostream>
+#include <random>
 
 class Neuron {
 private:
+    double inputSize;
+    double weightSize;
+    
     static double transformFunction(double x);
     static double transformFunctionDerivative(double x);
-    static double getRandomWeight(void);
+    void getRandomWeight(void);
+    
+    std::vector<double> inputs;
+    std::vector<double> weights;
+    
     double outPutVal;
+    double bias;
+    
 public:
-    Neuron();
+    Neuron(const int& inputTotal, const int& weightTotal);
+    ~Neuron();
+    
     void setOutPutVal(double val);
     double getOutPutVal(void) const;
-    void feedForward(const std::vector<Neuron>& prevLayer);
+
+    void setBias(double bias);
+    double getBias(void) const;
+
+    void feedForward(const std::vector<Neuron*>& prevLayer);
+
+    friend std::ostream& operator<< (std::ostream& os, const Neuron& n);
 };
 
 #endif /* Neuron_hpp */
