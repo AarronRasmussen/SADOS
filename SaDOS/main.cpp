@@ -12,6 +12,7 @@
 //  Copyright © 2020 Aarron Rasmussen. All rights reserved.
 //
 
+#include <someneatboostlibrary.h>
 #include <iostream>
 #include <fstream>
 #include <cassert>
