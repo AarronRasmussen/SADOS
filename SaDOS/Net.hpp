@@ -22,6 +22,7 @@ private:
 
 public:
     Net(const int& inputNum, const int& hiddenNum, const int& outputNum, const int& learningRate);
+    Net();
     void feedForward(const std::vector<double> &input);
     void backProp(const std::vector<double> &targetVals);
     double totalNetInput(const Neuron& n) const;

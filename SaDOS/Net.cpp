@@ -12,7 +12,6 @@ Net::Net(const int& inputNum, const int& hiddenNum, const int& outputNum, const 
     this->learningRate = learningRate;
     outputLayer.reserve(outputNum);
 
-
     for(int i = 0; i < hiddenNum; i++) {
         hiddenLayer.push_back(new Neuron(inputNum, hiddenNum));
     }
@@ -21,7 +20,7 @@ Net::Net(const int& inputNum, const int& hiddenNum, const int& outputNum, const 
         outputLayer.push_back(new Neuron(outputNum, outputNum));
     }
 
-    std::cout << "Net constructor called" << std::endl;
+    std::cout << "Calling Net Constructor.." << std::endl;
 }
 
 void Net::feedForward(const std::vector<double> &input) {

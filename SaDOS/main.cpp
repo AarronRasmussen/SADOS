@@ -13,20 +13,14 @@
 //
 
 #include <iostream>
-#include <vector>
 #include <fstream>
-#include <algorithm>
-#include <iterator>
 #include <cassert>
-
 #include <arpa/inet.h>
+
 #include "MNISTReader.hpp"
 #include "Net.hpp"
 
-uint32_t readUint32(std::ifstream& f);
-
 //TODO: Move this to a seperate file.
-
 struct Number{
 public:
     uint8_t label;

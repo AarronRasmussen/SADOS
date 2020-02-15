@@ -45,7 +45,7 @@ double Neuron::getOutPutVal(void) const {
 }
 
 void Neuron::setBias(double bias) {
-    
+    this->bias = bias;
 }
 
 double Neuron::getBias(void) const {
